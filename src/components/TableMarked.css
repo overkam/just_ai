@@ -1,0 +1,63 @@
+.Table {
+  position: relative;
+  top: 65px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.Table__head {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  text-align: left;
+  font-size: 23px;
+  text-transform: uppercase;
+  position: fixed;
+  top: 0;
+  padding: 20px 5px 5px 5px;
+  background-color: #fff;
+  opacity: 1;
+  height: 66px;
+  display: flex;
+  width: 450px;
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+  box-sizing: border-box;
+}
+
+.Marked {
+  position: fixed;
+  height: calc(100% - 80px);
+  padding-top: 10px;
+  width: 462px !important;
+  border-left: 1px solid rgba(224, 224, 224, 1);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.markedHover {
+  animation: flicker 3s linear infinite;
+  border-top: 1px solid rgba(224, 224, 224, 1);
+  border-left: 1px solid rgba(224, 224, 224, 1);
+}
+
+.Table__head--title {
+  margin: 0 20px 0 0;
+  padding: 0;
+}
+
+.Table__body {
+  width: 450px;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.3;
+    background-color: rgb(143, 121, 161);
+  }
+  50% {
+    opacity: 0.7;
+    background-color: rgb(143, 121, 161);
+  }
+  100% {
+    opacity: 0.3;
+    background-color: rgb(143, 121, 161);
+  }
+}

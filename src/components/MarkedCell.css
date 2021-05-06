@@ -1,0 +1,51 @@
+.markedAppear {
+  animation: appear 1s;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#clear {
+  width: 20px;
+  height: 20px;
+  align-self: center;
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+}
+
+.clearUser {
+  background-color: rgb(255, 140, 140) !important;
+}
+
+.Table__cell {
+  display: flex;
+  height: 68px;
+  padding: 10px;
+  max-width: 450px;
+  box-sizing: border-box;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Table__cell:hover {
+  background-color: rgba(224, 224, 224, 1);
+  transition-duration: 0.3s;
+}
+
+.Table__cell--card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Table__cell--info,
+.Table__cell--email {
+  padding: 0 0 0 10px;
+  margin: 0;
+}
